@@ -90,20 +90,9 @@ void beep( int note, int duree ) {
 
 ////////////////////////// Les chansons ////////////////////////
 
-//******* Alerte **************** 
-void Song::Alerte() {
-  beep(NOTE_A4, 500);  
-  beep(NOTE_A3, 500);
-  delay(250); 
-  beep(NOTE_A4, 500);  
-  beep(NOTE_A3, 500);
-  delay(250);  
-}
-
-
 //******* Starwars coté obscure **************** 
  
-void Song::Starwars() {   
+void Starwars() {   
   //firstSection
   beep(NOTE_A4, 500);
   beep(NOTE_A4, 500);    
@@ -186,7 +175,7 @@ void Song::Starwars() {
 }
   
 //******* GameOfThrones ****************
-void Song::GameOfThrones() {
+void GameOfThrones() {
   for(int i=0; i<3; i++) {
     beep(NOTE_G4, 500);     
     beep(NOTE_C4, 500);    
@@ -255,7 +244,7 @@ void Song::GameOfThrones() {
   
   
 //******* Happy Birthday ****************
-void Song::HappyBirthday() {
+void HappyBirthday() {
   beep(NOTE_G3, 200);
   beep(NOTE_G3, 200);
   beep(NOTE_A3, 500);
@@ -285,7 +274,7 @@ void Song::HappyBirthday() {
   
   
 //******* Harry Potter ****************
-void Song::HarryPotter() {
+void HarryPotter() {
   beep(NOTE_B4, 333);  
   beep(NOTE_E5, 500);   
   beep(NOTE_G5, 166);    
@@ -350,7 +339,7 @@ void Song::HarryPotter() {
   
   
 //******* Pirate des caraïbes ****************
-void Song::Pirate() {  
+void Pirate() {  
   beep(NOTE_E4, 125);
   beep(NOTE_G4, 125);
   beep(NOTE_A4, 250);
@@ -553,7 +542,7 @@ void Song::Pirate() {
   
   
 //******* Mario ****************
-void Song::mario() {
+void mario() {
   beep(NOTE_E7, 120);
   beep(NOTE_E7, 120);
   delay(120);  
@@ -673,7 +662,7 @@ void Song::mario() {
 }
   
 //******* McGyver ****************
-void Song::McGyver() {
+void McGyver() {
   beep(NOTE_B4, 200);
   beep(NOTE_E5, 200);
   beep(NOTE_A5, 200);
@@ -868,7 +857,7 @@ void Song::McGyver() {
   
   
 //******* IndianaJones ****************
-void Song::IndianaJones() {
+void IndianaJones() {
   beep(NOTE_E5, 240);
   delay(120);
   beep(NOTE_F5, 120);
@@ -928,7 +917,7 @@ void Song::IndianaJones() {
   
   
 //******* StarWars coté force ****************
-void Song::StarWars2() {
+void StarWars2() {
   beep(NOTE_F5, 166);
   beep(NOTE_F5, 166);
   beep(NOTE_F5, 166);
@@ -972,7 +961,7 @@ void Song::StarWars2() {
   
   
 //******* BonBruteTruand ****************
-void Song::BonBruteTruand() {
+void BonBruteTruand() {
   beep(NOTE_AS5, 133);
   beep(NOTE_DS6, 133);
   beep(NOTE_AS5, 133);
@@ -1009,7 +998,7 @@ void Song::BonBruteTruand() {
   
   
 //******* Entertainement ****************
-void Song::Entertainement() {
+void Entertainement() {
   beep(NOTE_D5, 214);
   beep(NOTE_DS5, 214);
   beep(NOTE_E5, 214);
@@ -1052,7 +1041,7 @@ void Song::Entertainement() {
   
   
 //******* 20thCenFox ****************
-void Song::twentyCentFox() {
+void twentyCentFox() {
   beep(NOTE_B5, 107);
   delay(214);
   beep(NOTE_B5, 107);
@@ -1117,7 +1106,7 @@ void Song::twentyCentFox() {
   
   
 //******* looney ****************
-void Song::looney() {
+void looney() {
   beep(NOTE_C6, 428);
   beep(NOTE_F6, 214);
   beep(NOTE_E6, 214);
@@ -1148,7 +1137,7 @@ void Song::looney() {
   
   
 //******* BarbieGirl ****************
-void Song::BarbieGirl() {
+void BarbieGirl() {
   beep(NOTE_GS5, 240);
   beep(NOTE_E5, 240);
   beep(NOTE_GS5, 240);
@@ -1176,7 +1165,7 @@ void Song::BarbieGirl() {
   
   
 //******* Greensleaves ****************
-void Song::Greensleaves() {
+void Greensleaves() {
   beep(NOTE_G5, 428);
   beep(NOTE_AS5, 856);
   beep(NOTE_C6, 428);
@@ -1218,7 +1207,7 @@ void Song::Greensleaves() {
   
   
 //******* James Bond *******************  
-void Song::Bond() {
+void Bond() {
   beep(NOTE_CS6, 187);
   beep(NOTE_DS6, 93);
   beep(NOTE_DS6, 93);
@@ -1256,103 +1245,6 @@ void Song::Bond() {
   beep(NOTE_GS6, 187);
   beep(NOTE_FS6, 187);
   beep(NOTE_GS6, 1125);
-}
-
-
-void Song::JingleBell() {
-  beep(NOTE_E5, 250); 
-  beep(NOTE_E5, 250);
-  beep(NOTE_E5, 500);
-  delay(200);
-  beep(NOTE_E5, 250);
-  beep(NOTE_E5, 250);
-  beep(NOTE_E5, 500);
-  delay(200);
-  beep(NOTE_E5, 250);
-  beep(NOTE_G5, 250);
-  beep(NOTE_C5, 250);
-  beep(NOTE_D5, 250);
-  beep(NOTE_E5, 900);
-  delay(200);
-  beep(NOTE_F5, 250);
-  beep(NOTE_F5, 250);
-  beep(NOTE_F5, 300);
-  beep(NOTE_F5, 250);
-  beep(NOTE_F5, 250);
-  beep(NOTE_E5, 250);
-  beep(NOTE_E5, 300);
-  beep(NOTE_E5, 125);
-  beep(NOTE_E5, 125);
-  beep(NOTE_E5, 250);
-  beep(NOTE_D5, 250); 
-  beep(NOTE_D5, 250);
-  beep(NOTE_E5, 250);
-  beep(NOTE_D5, 500);
-  beep(NOTE_G5, 500);
-}
-
-void Song::MerryChristmas() {
-  beep(NOTE_B3, 250);
-  beep(NOTE_F4, 250);
-  beep(NOTE_F4, 125);
-  beep(NOTE_G4, 125);
-  beep(NOTE_F4, 125);
-  beep(NOTE_E4, 125);
-  beep(NOTE_D4, 250);
-  beep(NOTE_D4, 250);
-  beep(NOTE_D4, 250);
-  beep(NOTE_G4, 250);
-  beep(NOTE_G4, 125);
-  beep(NOTE_A4, 125);
-  beep(NOTE_G4, 125);
-  beep(NOTE_F4, 125);
-  beep(NOTE_E4, 250);
-  beep(NOTE_E4, 250);
-  beep(NOTE_E4, 250);
-  beep(NOTE_A4, 250);
-  beep(NOTE_A4, 125);
-  beep(NOTE_B4, 125);
-  beep(NOTE_A4, 125);
-  beep(NOTE_G4, 125);
-  beep(NOTE_F4, 250);
-  beep(NOTE_D4, 250);
-  beep(NOTE_B3, 125);
-  beep(NOTE_B3, 125);
-  beep(NOTE_D4, 250);
-  beep(NOTE_G4, 250);
-  beep(NOTE_E4, 250);
-  beep(NOTE_F4, 500);
-}
-
-void Song::SantaClaus() {
-  beep(NOTE_G4, 125);
-  beep(NOTE_E4, 125);
-  beep(NOTE_F4, 125);
-  beep(NOTE_G4, 250);
-  beep(NOTE_G4, 250);
-  beep(NOTE_G4, 250);
-  beep(NOTE_A4, 125);
-  beep(NOTE_B4, 125);
-  beep(NOTE_C5, 250);
-  beep(NOTE_C5, 250);
-  beep(NOTE_C5, 250);
-  beep(NOTE_E4, 125);
-  beep(NOTE_F4, 125);
-  beep(NOTE_G4, 250);
-  beep(NOTE_G4, 250);
-  beep(NOTE_G4, 250);
-  beep(NOTE_A4, 125);
-  beep(NOTE_G4, 125);
-  beep(NOTE_F4, 250);
-  beep(NOTE_F4, 500);
-  beep(NOTE_E4, 250);
-  beep(NOTE_G4, 250);
-  beep(NOTE_C4, 250);
-  beep(NOTE_E4, 250);
-  beep(NOTE_D4, 250);
-  beep(NOTE_F4, 500);
-  beep(NOTE_B3, 250);
-  beep(NOTE_C4, 1000);
 }
 
 
