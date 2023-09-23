@@ -17,6 +17,5 @@ void ToneESP32::tone(int note, int duree ) {
 
 
 void ToneESP32::noTone() {
-    ledcDetachPin(pin);
     ledcWrite(channel, 0);
 }
